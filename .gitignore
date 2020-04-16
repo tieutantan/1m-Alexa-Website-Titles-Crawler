@@ -1,3 +1,7 @@
+__pycache__
+errors.log
+top-1m-result.csv
+
 *~
 
 # temporary files which can be created if a process still has a handle open of a deleted file
@@ -11,6 +15,3 @@
 
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
-__pycache__
-errors.log
-top1m_result.txt
