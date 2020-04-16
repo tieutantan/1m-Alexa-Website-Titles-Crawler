@@ -1,5 +1,4 @@
 import os
-import ntpath
 import shutil
 
 # param <path> could either be relative or absolute.
