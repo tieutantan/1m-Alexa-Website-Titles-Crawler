@@ -14,3 +14,5 @@ This package is compatible with Python 3.8.2. You can choose your threads number
 
 **Run**
 `python run.py`
+
+Thank you for reading!
