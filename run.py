@@ -8,8 +8,8 @@ import os
 import logging
 import time
 
-SOURCE_FILE = path.relative('top1m.txt')
-RESULT_FILE = path.relative('top1m_result.txt')
+SOURCE_FILE = path.relative('top-1m.csv')
+RESULT_FILE = path.relative('top-1m-result.csv')
 BUG_FILE = path.relative('errors.log')
 
 start_time = time.time()
@@ -69,7 +69,7 @@ def get_info(rank, url):
         title.__contains__("403 Page") == False and \
         title.__contains__("503 -") == False and \
         title.__contains__("Attention Required") == False:
-        text = "{} _@!@_ {} _@!@_ {} \n".format(rank, url, title)
+        text = "{},{},{}\n".format(rank, url, title)
         store_result(text)
         print(rank + "- <3 - " + url)
 
