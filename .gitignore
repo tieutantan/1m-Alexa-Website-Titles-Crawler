@@ -11,6 +11,6 @@
 
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
-
+__pycache__
 errors.log
 top1m_result.txt
