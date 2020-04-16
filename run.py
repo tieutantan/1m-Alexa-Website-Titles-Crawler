@@ -11,6 +11,8 @@ import time
 SOURCE_FILE = path.relative('top-1m.csv')
 RESULT_FILE = path.relative('top-1m-result.csv')
 BUG_FILE = path.relative('errors.log')
+USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36'
+TIMEOUT = 10
 
 start_time = time.time()
 os.system('cls||clear')
@@ -75,8 +77,8 @@ def get_info(rank, url):
 
 def get_title(url):
     try:
-        hearders = {'headers':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.92 Safari/537.36'}
-        response = requests.get(url, timeout=10.05, headers=hearders)
+        hearders = {'headers':USER_AGENT}
+        response = requests.get(url, timeout=TIMEOUT, headers=hearders)
         html = BeautifulSoup(response.text, "html.parser")
         return html.title.text
     except Exception as e:
