@@ -1,6 +1,6 @@
 # 1m Alexa Website's Titles Crawler
 
-This package is compatible with Python 3.8.2. You can choose your threads number to process on console. And configuration the user agent + crawl timeout in `run.py` file.
+This package is compatible with Python 3.8.2. You can choose your threads number to process on console. And configuration the user agent + crawl timeout in `config.py` file.
 
 1. Download `top-1m.csv.zip` and unzip `top-1m.csv` to root folder.
 2. Install modules.
